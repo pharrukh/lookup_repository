@@ -2,7 +2,7 @@
 
 ## General
 
-1. *ifconfig* - prints the list of all devices on the local network
+1. *arp -a* - prints the list of all devices on the local network
 2. *sudo ssh pi@some.local.ip.xx*
 3. *sudo apt-get update* - update Raspberry packages
 4. *sudo apt-get install netatalk* - to enable connection through Finder
