@@ -30,3 +30,8 @@
 ## Specific
 
 1. *arecord a.wav -D sysdefault:CARD=1* - to record audio from microphone
+
+## Camera
+
+1. [HTTP Video Tranlsation](https://desertbot.io/blog/how-to-stream-the-picamera)
+2. *raspistill -t 30000 -tl 2000 -o image%04d.jpg* - take pics
