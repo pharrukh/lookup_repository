@@ -34,6 +34,10 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 More commands [here](https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html).
 
+#### export dependencies to a file
+
+> pip3 freeze > requirements.txt
+
 ## TODOs
 
 1. investigate Tox for testing with different environments
