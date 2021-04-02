@@ -10,6 +10,12 @@
 
 ### virtualenvwrapper
 
+#### get env location
+
+```(shell)
+echo $VIRTUAL_ENV
+```
+
 #### setup
 
 > $ code ~/.zshenv
