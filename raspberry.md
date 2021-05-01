@@ -6,7 +6,7 @@
 2. *sudo ssh pi@some.local.ip.xx*
 3. *sudo apt-get update* - update Raspberry packages
 4. *sudo apt-get install netatalk* - to enable connection through Finder
-  1. *sudo nano /etc/netatalk/afp.conf* - update config
+   1. *sudo nano /etc/netatalk/afp.conf* - update config
      ```
       ;
       ; Netatalk 3.x configuration file
