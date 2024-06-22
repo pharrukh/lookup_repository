@@ -2,6 +2,11 @@
 
 **OS** Big Sur 11.1
 
+
+pip install virtualenvwrapper
+which python3
+which virtualenvwrapper.sh
+
 ## package management
 
 > $ virtualenv [env-name]  
