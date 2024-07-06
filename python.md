@@ -1,19 +1,22 @@
 # his highness all-mighty Python
 
-**OS** Big Sur 11.1
+**OS** 13.2.1 (22D68)
 
+## zsh
 
-pip install virtualenvwrapper
-which python3
-which virtualenvwrapper.sh
+- what is the difference between .zshenv and .zshrc? [see](https://unix.stackexchange.com/a/71258)
 
-## package management
+## pyenv - python version manager
 
-> $ virtualenv [env-name]  
-> $ .[env-name]/bin/activate  
-> $ deactivate
+> $ brew install pyenv
+> $ pyenv install -v 3.10.3 # Install preferred Python version
+> $ cd ~/.pyenv/versions/ # Access all python versions:
 
-### virtualenvwrapper
+> $ brew install pyenv-virtualenv
+> $ pyenv virtualenv [python version] [env-name]  
+> $ pyenv virtualenvs
+> $ pyenv activate [env-name]  
+> $ pyenv deactivate
 
 #### get env location
 
@@ -23,21 +26,16 @@ echo $VIRTUAL_ENV
 
 #### setup
 
-> $ code ~/.zshenv
+> $ code ~/.zshrc
 
 ```(shell)
-export VIRTUALENVWRAPPER_PYTHON="/usr/local/bin/python3"
-export WORKON_HOME="/Users/farrukhnormuradov/dev/virtualenvs"
-export PROJECT_HOME="/Users/farrukhnormuradov/dev"
-source /usr/local/bin/virtualenvwrapper.sh
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrcexport PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 ```
 
-#### how-to
-
-> workon [projectname]  
-> mkproject (-p python3) [newprojectname]
-
-More commands [here](https://virtualenvwrapper.readthedocs.io/en/latest/command_ref.html).
+More commands [here](https://github.com/pyenv/pyenv/blob/master/COMMANDS.md).
 
 #### export dependencies to a file
 
