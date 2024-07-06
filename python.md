@@ -8,15 +8,15 @@
 
 ## pyenv - python version manager
 
-> $ brew install pyenv
-> $ pyenv install -v 3.10.3 # Install preferred Python version
-> $ cd ~/.pyenv/versions/ # Access all python versions:
+> $ brew install pyenv  
+> $ pyenv install -v 3.10.3 # Install preferred Python version  
+> $ cd ~/.pyenv/versions/ # Access all python versions:  
 
-> $ brew install pyenv-virtualenv
-> $ pyenv virtualenv [python version] [env-name]  
-> $ pyenv virtualenvs
-> $ pyenv activate [env-name]  
-> $ pyenv deactivate
+> $ brew install pyenv-virtualenv  
+> $ pyenv virtualenv [python version] [env-name]    
+> $ pyenv virtualenvs  
+> $ pyenv activate [env-name]    
+> $ pyenv deactivate  
 
 #### get env location
 
